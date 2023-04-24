@@ -1,3 +1,4 @@
+import 'package:exp04/homepage.dart';
 import 'package:exp04/models/subjectfaculty.dart';
 import 'package:flutter/material.dart';
 
@@ -84,12 +85,7 @@ class _MyProfilePageState extends State<MyProfilePage> {
   @override
   Widget build(BuildContext context) {
     List<Widget> pages = <Widget>[
-      const Center(
-        child: Icon(
-          Icons.home,
-          size: 150,
-        ),
-      ),
+      const HomePage(),
       const MySubjects(),
       SingleChildScrollView(
         child: Padding(
